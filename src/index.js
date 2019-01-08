@@ -7,6 +7,10 @@ const
 {config,util,logic,output,input}=silo,
 {curry,curryN}=util,
 //@todo find & replace "custom" & "element" with proper values
+
+//@todo make accessible from file.path.mk?
+joinPath=(path,filename)=>path+(!path.match(/\/$/)?'/':'')+filename
+
 export default silo(async function(initialState,url='/node_modules/custom-element/')
 {
 	// await util.mkCustomEl(url,'custom-element',custom.element)
