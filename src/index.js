@@ -21,6 +21,18 @@ export default silo(async function(initialState,url='/node_modules/custom-elemen
 	// render=truth.compile(({state})=>v.render(document.body,state,output))
 
 	// truth(state,render)
+
+	const//@todo upstream replacement & update tests?
+	path=JSON.parse(await file.path('./')),
+	filePaths=JSON.parse(await file.readDir(path)).map(curryN(1,joinPath,path)),
+	stats=await Promise.all(filePaths.map(async function(path)
+	{//@todo file.info should return the full path of the object as well
+		const info=JSON.parse(await file.info(path))
+
+		return Object.assign(info,{path})
+	}))
+
+	console.log(stats)
 })
 silo.manager=class extends silo.customElement
 {
