@@ -16,9 +16,9 @@ export default silo(async function(initialState,url='/node_modules/custom-elemen
 	// await util.mkCustomEl(url,'custom-element',custom.element)
 
 	//@todo these should be in silo.customElement constructor... 
-	const
-	state=logic(initialState),
-	render=truth.compile(({state})=>v.render(document.body,state,output))
+	// const
+	// state=logic(initialState),
+	// render=truth.compile(({state})=>v.render(document.body,state,output))
 
 	// truth(state,render)
 })
