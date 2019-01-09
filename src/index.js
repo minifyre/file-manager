@@ -29,6 +29,7 @@ export default async function()
 
 	const state=logic()
 
+	stats[0].list=stats.slice(1).map(({id})=>id)
 	stats.forEach(stat=>state.file.data[stat.id]=stat)
 	state.view.path.push(stats[0].id)
 
