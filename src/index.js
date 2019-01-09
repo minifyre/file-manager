@@ -16,12 +16,13 @@ export default async function()
 	const//@todo upstream replacement & update tests?
 	path=JSON.parse(await file.path('./')),
 	filePaths=JSON.parse(await file.readDir(path)).map(curryN(1,joinPath,path)),
-	stats=await Promise.all(filePaths.map(async function(path)
+	stats=(await Promise.all([path].concat(filePaths).map(async function(path)
 	{//@todo file.info should return the full path of the object as well
 		const info=JSON.parse(await file.info(path))
 
 		return Object.assign(info,{path})
-	}))
+	})))
+	.map(stat=>Object.assign({id:util.id()},stat))
 
 	console.log(stats)
 }
