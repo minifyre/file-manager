@@ -24,7 +24,17 @@ export default async function()
 	})))
 	.map(stat=>Object.assign({id:util.id()},stat))
 
-	console.log(stats)
+	//@todo watch open dirs for new files/folders
+		//@todo (unwatch on refresh- need to use chant)
+
+	const state=logic()
+
+	stats.forEach(stat=>state.file.data[stat.id]=stat)
+	state.view.path.push(stats[0].id)
+
+	const render=truth.compile(({state})=>v.render(document.body,state,output))
+
+	truth(state,render)
 }
 
 // export default silo(async function(initialState,url='/node_modules/custom-element/')
@@ -32,11 +42,7 @@ export default async function()
 // 	await util.mkCustomEl(url,'custom-element',custom.element)
 
 // 	//@todo these should be in silo.customElement constructor... 
-// 	const
-// 	state=logic(initialState),
-// 	render=truth.compile(({state})=>v.render(document.body,state,output))
 
-// 	truth(state,render)
 // })
 
 
