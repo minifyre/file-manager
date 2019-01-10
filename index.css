@@ -10,3 +10,8 @@ header,.icon
 
 .icon{text-transform:uppercase;}
 
+.icon[data-ext="js"]
+{
+	background:#fc0;
+	color:#222;
+}
