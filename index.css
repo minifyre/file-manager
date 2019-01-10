@@ -8,7 +8,16 @@ header,.icon
 	background:var(--main);
 }
 
-.icon{text-transform:uppercase;}
+.icon
+{
+	position:relative;
+	text-transform:uppercase;
+}
+.icon::after
+{
+	position:absolute;
+}
+
 
 [data-ext="js"]
 {
