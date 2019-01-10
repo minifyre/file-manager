@@ -15,3 +15,4 @@ header,.icon
 	background:#fc0;
 	color:#222;
 }
+.icon[data-ext="folder"]{color:transparent;}/*@todo remove when icon font is added*/
