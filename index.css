@@ -25,3 +25,11 @@ header,.icon
 	background:#fc0;
 	color:#222;
 }
+[data-ext="7z"],[data-ext="s7z"]{background:#222;color:transparent;}
+[data-ext="7z"]::after,
+[data-ext="s7z"]::after
+{
+	content:"7zip";
+	color:#fff;
+	text-transform:none;
+}
