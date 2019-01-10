@@ -8,3 +8,5 @@ header,.icon
 	background:var(--main);
 }
 
+.icon{text-transform:uppercase;}
+
