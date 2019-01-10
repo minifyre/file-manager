@@ -1,1 +1,35 @@
-header,.icon{background:#f33;}
+:root
+{
+	--main:#f33;
+}
+
+header,.icon
+{
+	background:var(--main);
+}
+
+.icon
+{
+	position:relative;
+	text-transform:uppercase;
+}
+.icon::after
+{
+	position:absolute;
+}
+
+[data-ext="folder"]{color:transparent;}/*@todo remove when icon font is added*/
+
+[data-ext="js"]
+{
+	background:#fc0;
+	color:#222;
+}
+[data-ext="7z"],[data-ext="s7z"]{background:#222;color:transparent;}
+[data-ext="7z"]::after,
+[data-ext="s7z"]::after
+{
+	content:"7zip";
+	color:#fff;
+	text-transform:none;
+}
