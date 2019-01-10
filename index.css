@@ -1,1 +1,10 @@
-header,.icon{background:#f33;}
+:root
+{
+	--main:#f33;
+}
+
+header,.icon
+{
+	background:var(--main);
+}
+
