@@ -1,0 +1,38 @@
+3dm,3ds,3g2,3gp,LICENSE,a,aac,aaf,ai,aiff,ape,apk,ar,asf,au,avchd,avi,bat,bin,
+bmp,bz2,cab,cc,class,clj,cpio,cpp,crx,cs,cxx,dds,deb,diff,dmg,doc,docx,
+drc,dwg,dxf,ebook,egg,el,eot,eps,exe,flac,flv,gif,gitignore,go,gpx,gsm,gz,h,htm,
+html,ics,iso,it,jai,jar,java,jsx,kml,kmz,lha,log,lua,m,m2v,
+m3u,m4,m4a,m4p,m4v,mar,max,md,mid,mjs,mkv,mng,mod,mov,mp2,mp3,mp4,mpa,mpe,mpeg,
+mpg,mpv,msg,msi,mxf,nsv,odp,ods,odt,ogg,ogm,ogv,org,otf,pages,pak,patch,pdf,pea,
+php,pl,pls,po,ps,psd,py,qt,ra,rar,rb,rlib,rm,rmvb,roq,rpm,rs,rtf,
+s3m,sh,shar,sid,srt,svi,swift,tar,tbz2,tex,tga,tgz,thm,
+tlz,ts,ttf,txt,vb,vcf,vcxproj,vob,war,wasm,wav,webm,whl,wma,wmv,wpd,wps,xcf,
+xcodeproj,xmc,xpi,xz,yuv
+
+CERT
+	crt
+	key
+	pem
+css
+	less
+	sass,scss
+DATA
+	bson
+	json
+	xml
+FONTS
+	woff,woff2
+IMAGES
+	jpeg,jpg
+	pik
+	png
+	svg
+	tif,tiff
+	webp
+SLIDES
+	kth,key
+	ppt,pptx
+SPREADSHEET
+	csv
+	tsv
+	xls,xlsx
