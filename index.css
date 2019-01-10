@@ -18,10 +18,10 @@ header,.icon
 	position:absolute;
 }
 
+[data-ext="folder"]{color:transparent;}/*@todo remove when icon font is added*/
 
 [data-ext="js"]
 {
 	background:#fc0;
 	color:#222;
 }
-[data-ext="folder"]{color:transparent;}/*@todo remove when icon font is added*/
