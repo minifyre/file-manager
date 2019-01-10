@@ -10,9 +10,9 @@ header,.icon
 
 .icon{text-transform:uppercase;}
 
-.icon[data-ext="js"]
+[data-ext="js"]
 {
 	background:#fc0;
 	color:#222;
 }
-.icon[data-ext="folder"]{color:transparent;}/*@todo remove when icon font is added*/
+[data-ext="folder"]{color:transparent;}/*@todo remove when icon font is added*/
